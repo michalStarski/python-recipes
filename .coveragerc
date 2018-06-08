@@ -1,0 +1,3 @@
+[run]
+source = recepies
+omit = recepies/test*

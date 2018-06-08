@@ -1,0 +1,27 @@
+{% extends "layout.jinja2" %}
+
+{% block recipe %}
+    <h1 style="text-align: center; margin-bottom:10px;">Python Recepies</h1>
+    <div class="container justify-content-center align-items-center">
+    <h2>Recipe #{{recipeNumber}}</h2>
+    <h5 style="text-align:center; color:yellowgreen;">-- {{ figcaption }} --</h5>
+    <div class="ing justify-content-center">
+      <h3>Ingredients</h3>
+      <ul>
+        {% for ingredient in ingredients %}
+        <li> {{ ingredient|e }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <figure class="foodImg">
+      <img src={{ image }} alt={{ figcaption }}/>
+    </figure>
+    <figcaption>{{figcaption}}</figcaption>
+        <h3>Steps</h3>
+    <ul>
+        {% for step in steps %}
+        <li> {{ step|e }} </li>
+        {% endfor %}
+    </ul>
+    </div>
+{% endblock %}

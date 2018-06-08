@@ -1,0 +1,42 @@
+{% extends 'layout.jinja2' %}
+
+{% block form %}
+
+<h2>Add a new recipe</h2>
+
+<form>
+  <div class="info-grid">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" autocomplete="off">
+        <label for="name">Photo</label>
+        <input type="text" class="form-control" id="photo" autocomplete="off">
+  </div>
+  <div class="grid-ingredients">
+        <label for="ing">Add Ingredient</label>
+        <input type="text" class="form-control" id="ing" autocomplete="off">
+        <button class="btn btn-primary add" id="ingBtn" style="margin: 10px 0;">Add</button>
+  </div>  
+  <div class="grid-steps">
+        <label for="step">Add Step</label>
+        <input type="text" class="form-control" id="step" autocomplete="off">
+        <button class="btn btn-primary add" id="stepBtn" style="margin: 10px 0;">Add</button>
+  </div>  
+</form>
+
+<div class="form-grid" style="margin: 1rem 0;">
+    <div>
+        <h4>Added Ingredients</h4>
+        <ul id="ingredients">
+            
+    </ul>
+    </div>
+    <div>
+        <h4>Added Steps</h4>
+        <ul id="steps">
+            
+        </ul>
+    </div>
+</div>
+<button id="submit" class="btn btn-success">Submit</button>
+
+{% endblock %}

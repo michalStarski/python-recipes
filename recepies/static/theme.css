@@ -1,0 +1,45 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background: #bc2131;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow:column;
+  border: 8px solid #ffffff;
+  min-height:100vh;
+  padding:10px;
+}
+
+.foodImg img{
+  display:table;
+  margin:auto;
+  width:300px;
+  height:200px;
+}
+
+figcaption{
+  text-align:center;
+}
+
+.form-grid{
+  width: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.add{
+  width:20%;
+}
+
+.newLink{
+  text-decoration:none; 
+  color:#ffffff;
+}
+
+.newLink:hover{
+  color:yellowgreen;
+  text-decoration: none;
+}
