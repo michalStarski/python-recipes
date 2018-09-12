@@ -9,7 +9,7 @@ Getting Started
 - Change directory into root project root folder .
 
 ```
-$ cd recepies
+$ cd python-recepies
 ```
 
 - Upgrade packaging tools.
