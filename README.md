@@ -16,14 +16,14 @@ $ cd recepies
 
 
 ```
-$ env/bin/pip install --upgrade pip setuptools
+$ pyvenv/bin/pip3 install --upgrade pip setuptools
 ```
 
 - Install the project dependencies
 
 
 ```
-$ env/bin/pip install -e 
+$ pyvenv/bin/pip3 install -e .
 ```
 
 
