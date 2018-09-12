@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/mac/Desktop/Python/recepies/pyvenv"
+VIRTUAL_ENV="/Users/mac/Desktop/python-recipes/pyvenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
